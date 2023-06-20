@@ -1,7 +1,22 @@
-import React from "react";
+import "./main.css";
 
 const App = () => {
-  return <h4>Testing</h4>;
+  return (
+    <div className="container">
+      <h1>Testing</h1>
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  );
 };
 
 export default App;
