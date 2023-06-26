@@ -7,23 +7,27 @@ body {
   padding: 0;
 }
 
-.container {
+.book-list {
+  display: grid;
+  grid-template: repeat(2, 350px) / repeat(3, 1fr);
+  justify-content: center;
+}
+
+.bookContainer {
   display: flex;
-  justify-content: space-around;
-  font-size: 1.1rem;
+  flex-direction: column;
+  justify-self: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+
+  font-size: 1.3rem;
 }
 
-.container > ul {
-  display: flex;
+.bookImage {
+  width: 180px;
+  height: 300px;
 }
 
-li {
-  padding: 0 20px;
-  font-size: 1rem;
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: black;
+.authorName {
+  margin: 0;
+  padding: 0;
 }

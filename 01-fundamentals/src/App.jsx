@@ -1,21 +1,13 @@
 import "./main.css";
-
+import BookList from "./components/BookList";
+import React from "react";
+import data from "./data";
 const App = () => {
+  data();
   return (
-    <div className="container">
-      <h1>Testing</h1>
-      <ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
+    <React.StrictMode>
+      <BookList />
+    </React.StrictMode>
   );
 };
 

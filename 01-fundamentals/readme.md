@@ -43,3 +43,32 @@
     );
   };
   ```
+- Instead class class property use className in JSX
+- It may consists of both paired tags and unpaired tags
+
+- ```js
+  //Paired tags
+  return <div className="container"></div>;
+  ```
+- ```js
+  //Unpaired tags
+  return <img />;
+  ```
+
+#### Nest Components
+
+> Either using a single component to render a website , use multiple Components inside a single head components.
+
+```js
+const App = () => {
+  const Home = () => <h3>Home Component</h3>;\
+  const Compo = () => <h3>Secondary Component</h3>;
+  return (
+    <div>
+      //Where the Home and Compo are subcomponent
+      <Home />
+      <Compo />
+    </div>
+  );
+};
+```
